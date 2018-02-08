@@ -1,4 +1,4 @@
-# AngularJs-MVC
+# AngularJs-Component
 AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full fledged language to itself. This repository contains a simple AngularJS application starter template showcasing components as the main building block (not controllers). It uses lite-server to serve the site (which is just a thin layer for browsersync). Launchable in vscode, which makes it quick to get up.
 
 # Frameworks
