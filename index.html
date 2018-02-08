@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS With Components</title>
+    <!-- CSS (load bootstrap) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link href="node_modules/ng-prettyjson/dist/ng-prettyjson.min.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body data-ng-app="App">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="#">AngularJS with Components</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+            <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+        <div ui-view></div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="node_modules/angular-spinners/dist/angular-spinners.min.js"></script>
+    <script src="node_modules/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
+
+    <!-- content here -->
+    <script src="src/app.js"></script>
+    <script src="src/main.js"></script>
+
+    <!-- services -->
+    <script src="src/services/bioService.js"></script>
+    <script src="src/services/githubService.js"></script>
+
+    <!-- components -->
+    <script src="src/home/home.controller.js"></script>
+    <script src="src/home/home.component.js"></script>
+    <script src="src/about/about.controller.js"></script>
+    <script src="src/about/about.component.js"></script>
+    <script src="src/bio/languages.component.js"></script>
+    <script src="src/bio/languages.controller.js"></script>
+    <script src="src/bio/servers.component.js"></script>
+    <script src="src/bio/servers.controller.js"></script>
+    <script src="src/hero/hero.component.js"></script>
+    <script src="src/hero/hero.controller.js"></script>
+</body>
+
+</html>
