@@ -10,6 +10,7 @@ AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full 
 5. [Angular Spinners](https://github.com/chevtek/angular-spinners/tree/gh-pages)
 
 # Steps for installation
+0. (optional) Install [Visual Studio Code](https://code.visualstudio.com). It has multi-platform support, is a great general editor, and the task system plus plugins support sets it above and beyond just a code editting tool.
 1. Install Node.JS via [nvm](https://github.com/creationix/nvm) (or [nvm-windows](https://github.com/coreybutler/nvm-windows))
 2. NPM should be installed with your Nodejs and is a very useful package manager
 3. open a command prompt to this directory 
