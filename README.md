@@ -1,7 +1,8 @@
 # AngularJs-Component
+
 AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full fledged language to itself. This repository contains a simple AngularJS application starter template showcasing components as the main building block (not controllers). It uses lite-server to serve the site (which is just a thin layer for browsersync). Launchable in vscode, which makes it quick to get up.
 
-# Frameworks
+## Frameworks
 
 1. angular components
 2. [ui-router](https://ui-router.github.io/ng1/tutorial/helloworld)
@@ -9,16 +10,17 @@ AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full 
 4. one way data binding
 5. [Angular Spinners](https://github.com/chevtek/angular-spinners/tree/gh-pages)
 
-# Steps for installation
-0. (optional) Install [Visual Studio Code](https://code.visualstudio.com). It has multi-platform support, is a great general editor, and the task system plus plugins support sets it above and beyond just a code editting tool.
-1. Install Node.JS via [nvm](https://github.com/creationix/nvm) (or [nvm-windows](https://github.com/coreybutler/nvm-windows))
-2. NPM should be installed with your Nodejs and is a very useful package manager
-3. open a command prompt to this directory 
-4. npm install
-5. npm run start
-6. (optional) If using vscode, you can just simply "launch" after you run npm install
+## Steps for installation
 
-# General Tutorials
+1. (optional) Install [Visual Studio Code](https://code.visualstudio.com). It has multi-platform support, is a great general editor, and the task system plus plugins support sets it above and beyond just a code editting tool.
+1. Install Node.JS via [nvm](https://github.com/creationix/nvm) (or [nvm-windows](https://github.com/coreybutler/nvm-windows))
+1. NPM should be installed with your Nodejs and is a very useful package manager
+1. open a command prompt to this directory 
+1. npm install
+1. npm run start
+1. (optional) If using vscode, you can just simply "launch" after you run npm install
+
+## General Tutorials
 
 [Scotch.io Tutorial](https://scotch.io/courses/getting-started-with-angularjs-1x)
 
@@ -26,7 +28,7 @@ AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full 
 
 [Service vs. Factory](https://blog.thoughtram.io/angular/2015/07/07/service-vs-factory-once-and-for-all.html)
 
-# Component Tutorials
+## Component Tutorials
 
 At the end of the day, components should be used for everything. Controllers can be optional. I tend to add a controller to my component "just in case" but that's personal preference.
 
