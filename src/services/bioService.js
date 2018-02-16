@@ -1,3 +1,5 @@
+// Service that uses the "Revealing Module" pattern
+// http://jargon.js.org/_glossary/REVEALING_MODULE_PATTERN.md
 (function() {
     angular.module("App").service('bioService', function() {
         // Great example of a stub that can then morph into real calls

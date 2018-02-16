@@ -2,7 +2,13 @@
 
 AngularJS, formerly Angular 1.X and now sometimes referred to as ng1, is a full fledged language to itself. This repository contains a simple AngularJS application starter template showcasing components as the main building block (not controllers). It uses lite-server to serve the site (which is just a thin layer for browsersync). Launchable in vscode, which makes it quick to get up.
 
-## Frameworks
+## Notes from the Author
+
+Some of this code is personal preference, but a lot comes from best practices I've learned either by reading or the school of hard knocks. Separation of Concerns is a huge principle and pattern for me. Globals are the devil. Reusable and supportable code are a priority, not just functional.
+
+I've tried to put documentation in the comments of this code on why I've done certain things. I would encourage anybody else contributing to do the same.
+
+## Frameworks Used
 
 1. angular components
 2. [ui-router](https://ui-router.github.io/ng1/tutorial/helloworld)
