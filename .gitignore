@@ -18,6 +18,5 @@ angular.xcodeproj
 libpeerconnection.log
 npm-debug.log
 /tmp/
-.vscode
 *.log
 *.stackdump
