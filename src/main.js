@@ -15,13 +15,12 @@
             })
 
             // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-            // Notice the resolve is at the state level (not the named view level)
-            // also, we can use a regular service here instead of a provider because this resolve happens later
-            // normally, any service that gets used in .config needs to be a provider
             .state('about', {
                 url: '/about',
                 views: {
                     '': { component: 'about' },
+                    // named views are suffixed by their component they are nested in
+                    // bio@about is an example of a partial that didn't need a component or controller
                     'bio@about': { templateUrl: 'src/bio/me.html' },
                     'columnOne@about': {
                         component: 'servers'
@@ -30,7 +29,10 @@
                         component: 'languages'
                     }
                 },
+                // the resolve is at the state level (not the named view level)
                 resolve: {
+                    // these are normal services and not providers because resolve gets called later
+                    // normally, any service that gets used in .config needs to be a provider
                     servers: function(bioService) {
                         return bioService.getServers();
                     },
