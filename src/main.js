@@ -21,7 +21,7 @@
                     '': { component: 'about' },
                     // named views are suffixed by their component they are nested in
                     // bio@about is an example of a partial that didn't need a component or controller
-                    'bio@about': { templateUrl: 'src/bio/me.html' },
+                    'bio@about': { component: 'me' },
                     'columnOne@about': {
                         component: 'servers'
                     },
@@ -38,6 +38,9 @@
                     },
                     languages: function(bioService) {
                         return bioService.getLanguages();
+                    },
+                    me: function() {
+                        return 'darthmolen';
                     }
                 }
             });

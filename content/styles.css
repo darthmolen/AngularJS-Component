@@ -1,0 +1,38 @@
+pre {
+    outline: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.string {
+    color: green;
+}
+
+.number {
+    color: darkorange;
+}
+
+.boolean {
+    color: blue;
+}
+
+.null {
+    color: magenta;
+}
+
+.key {
+    color: red;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.body-card {
+    border: 1px solid #E1E8ED;
+    border-radius: 5px;
+}
+
+.panel-default {
+    width: 600px;
+}

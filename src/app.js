@@ -3,7 +3,7 @@
 (function() {
     // Personal preference. I like to separate my instantiation of my module 
     // from my configuration Configuration happens in main.js
-    var app = angular.module("App", ['ui.router', 'angularSpinners']);
+    var app = angular.module("App", ['ui.router', 'angularSpinners', 'ngSanitize']);
 
     var _component = app.component;
     app.component = function(name, options) {

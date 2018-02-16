@@ -15,6 +15,7 @@ I've tried to put documentation in the comments of this code on why I've done ce
 3. multi-view components
 4. one way data binding
 5. [Angular Spinners](https://github.com/chevtek/angular-spinners/tree/gh-pages)
+6. [Bootcards](http://bootcards.org/site/docs.html)
 
 ## Steps for installation
 

@@ -27,7 +27,49 @@
 <div>
     <spinner name="github" register="true" image-src="content/animated_spinner.gif" on-loaded="vm.spinnerLoaded(spinnerApi);"></spinner>
 </div>
-<div>
+
+<div class="panel panel-default bootcards-media">
+    <div class="panel-heading">
+        <h4>{{vm.user.name}}</h4>
+    </div>
+    <div class="row panel-body">
+        <div class="col-xs-6 body-card">
+            <div class="row">
+                <label class="col-xs-3 control-label">Alias</label>
+                <div class="col-xs-9">{{vm.user.login}}</div>
+            </div>
+            <div class="row">
+                <label class="col-xs-3 control-label">url</label>
+                <div class="col-xs-9"><a href="{{vm.user.url}}">Github Repos</a></div>
+            </div>
+        </div>
+        <div class="col-xs-6 pull-right">
+            <img ng-src="{{vm.user.avatar_url}}" />
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="row center-block">
+            <div class="col-xs-4">
+                <a ng-href="{{vm.preferences.twitter}}">
+                    <i class="fab fa-twitter pull-left fa-3x"></i>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <center>
+                    <a ng-href="{{vm.preferences.twitch}}">
+                        <i class="fab fa-twitch center-block fa-3x"></i>
+                    </a>
+                </center>
+            </div>
+            <div class="col-xs-4">
+                <a ng-href="{{vm.preferences.wishlist}}"><i class="fas fa-chess pull-right fa-3x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-primary" ng-click="vm.toggleCode(this)">{{vm.codeButtonText}}</button>
+<div ng-show="vm.showJSON">
     <div>{{ vm.userName }} JSON:</div>
-    <pretty-json json="vm.user"></pretty-json>
+    <pre ng-bind-html="vm.user | prettify"></pre>
 </div>

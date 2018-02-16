@@ -6,13 +6,17 @@
     <title>AngularJS With Components</title>
     <!-- CSS (load bootstrap) -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-    <link href="node_modules/ng-prettyjson/dist/ng-prettyjson.min.css" rel="stylesheet" />
-    <style>
-        .navbar {
-            border-radius: 0;
-        }
-    </style>
+    <!-- https://fontawesome.com/get-started/web-fonts-with-css -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/styles.css" />
+
+    <!-- https://www.sitepoint.com/introducing-bootcards-bootstrap-cards-made-easy/ -->
+    <!-- Bootcards CSS for desktop: -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/css/bootcards-desktop.min.css">
+
+    <!-- Bootcards JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
+
 </head>
 
 <body data-ng-app="App">
@@ -37,14 +41,15 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
     <script src="scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
     <script src="node_modules/angular-spinners/dist/angular-spinners.min.js"></script>
-    <script src="node_modules/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
 
     <!-- content here -->
     <script src="src/app.js"></script>
     <script src="src/main.js"></script>
+    <script src="src/filters.js"></script>
 
     <!-- services -->
     <script src="src/services/bioService.js"></script>
@@ -61,6 +66,8 @@
     <script src="src/bio/servers.controller.js"></script>
     <script src="src/hero/hero.component.js"></script>
     <script src="src/hero/hero.controller.js"></script>
+    <script src="src/me/me.component.js"></script>
+    <script src="src/me/me.controller.js"></script>
 </body>
 
 </html>

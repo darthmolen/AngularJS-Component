@@ -2,7 +2,7 @@
     angular.module('App')
         .component('hero', {
             bindings: {
-                userName: '<',
+                userName: '<'
             },
             templateUrl: 'src/hero/hero.html',
             controller: 'heroController',
